@@ -1,0 +1,13 @@
+{
+  "name": "server",
+  "chef_environment": "dev",
+  "normal": {
+    "tags": [
+
+    ]
+  },
+  "run_list": [
+    "recipe[my_cookbook]",
+    "role[web_servers]"
+  ]
+}
