@@ -1,0 +1,46 @@
+{
+  "sources": {
+    "my_cookbook": {
+      "path": "."
+    },
+    "chef-client": {
+      "locked_version": "3.3.3"
+    },
+    "cron": {
+      "locked_version": "1.3.0"
+    },
+    "logrotate": {
+      "locked_version": "1.5.0"
+    },
+    "build-essential": {
+      "locked_version": "1.4.4"
+    },
+    "apt": {
+      "locked_version": "2.3.8"
+    },
+    "ntp": {
+      "locked_version": "1.6.0"
+    },
+    "nginx": {
+      "locked_version": "2.4.2"
+    },
+    "bluepill": {
+      "locked_version": "2.3.1"
+    },
+    "rsyslog": {
+      "locked_version": "1.12.2"
+    },
+    "ohai": {
+      "locked_version": "1.1.12"
+    },
+    "runit": {
+      "locked_version": "1.5.8"
+    },
+    "yum": {
+      "locked_version": "3.1.2"
+    },
+    "yum-epel": {
+      "locked_version": "0.3.4"
+    }
+  }
+}

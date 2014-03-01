@@ -16,3 +16,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+include_recipe 'build-essential'
+include_recipe 'chef-client'
+include_recipe 'apt'
+include_recipe 'ntp'
+include_recipe 'nginx'
