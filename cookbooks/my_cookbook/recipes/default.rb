@@ -22,3 +22,19 @@ include_recipe 'chef-client'
 include_recipe 'apt'
 include_recipe 'ntp'
 include_recipe 'nginx'
+
+message = node['my_cookbook']['message']
+Chef::Log.info("** saying what I was told to say: #{message}")
+
+
+# deploy your sites configuration from the files/ driectory in your cookbook
+cookbook_file "#{node['nginx']['dir']}/sites-available/local.gracebiblestudies.com" do
+  owner "root"
+  group "root"
+  mode  "0644"
+end
+
+# enable your sites configuration using a definition from the nginx cookbook
+nginx_site "local.gracebiblestudies.com" do
+  enable true
+end

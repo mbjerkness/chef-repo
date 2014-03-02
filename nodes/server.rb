@@ -1,6 +1,6 @@
 {
   "name": "server",
-  "chef_environment": "_default",
+  "chef_environment": "dev",
   "normal": {
     "tags": [
 

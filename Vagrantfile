@@ -6,7 +6,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.box = "opscode-ubuntu-12.04-i386"
   config.vm.box_url = "https://opscode-vm.s3.amazonaws.com/vagrant/opscode_ubuntu-12.04-i386_provisionerless.box"
-  config.vm.network :forwarded_port, guest: 8080, host: 9090
+  config.vm.network :private_network, ip: "192.168.33.20"
   config.vm.hostname = "mikebjerkness-starter"
   
 
